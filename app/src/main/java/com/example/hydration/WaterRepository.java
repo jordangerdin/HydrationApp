@@ -17,7 +17,7 @@ public class WaterRepository {
     }
 
     public void insert(WaterRecord record) {
-        // insert record asynchonously (in the background)
+        // insert record asynchronously (in the background)
         new InsertWaterAsync(waterDAO).execute(record);
     }
 

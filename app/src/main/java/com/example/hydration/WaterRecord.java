@@ -6,6 +6,8 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class WaterRecord {
+
+    // Object for water record, a day and # of glasses (per day)
     public WaterRecord(@NonNull String day, int glasses) {
         this.day = day;
         this.glasses = glasses;

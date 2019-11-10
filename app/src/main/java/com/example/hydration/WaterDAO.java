@@ -12,6 +12,7 @@ import java.util.List;
 @Dao
 public interface WaterDAO {
 
+    //SQL Statements to use
     @Insert(onConflict = OnConflictStrategy.IGNORE) // Ignore a new record for an existing day
     void insert(WaterRecord... wr);
 

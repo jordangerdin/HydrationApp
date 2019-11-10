@@ -39,6 +39,8 @@ public class WaterFragment extends Fragment {
 
     public WaterFragment() { } // Required empty public constructor
 
+
+    // for declaring new a new instance
     public static WaterFragment newInstance(String day) {
         WaterFragment fragment = new WaterFragment();
         Bundle args = new Bundle();
@@ -80,6 +82,7 @@ public class WaterFragment extends Fragment {
             }
         });
 
+        // add +1 to day
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,6 +96,7 @@ public class WaterFragment extends Fragment {
             }
         });
 
+        // Set counts to 0 for day
         resetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
